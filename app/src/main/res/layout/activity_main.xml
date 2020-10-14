@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtValorInicial"
+        android:inputType="numberDecimal"
+        android:hint="Valor inicial"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtValorFinal"
+        android:inputType="numberDecimal"
+        android:hint="Valor final"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtValorInicial"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSortear"
+        android:text="Sortear"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtValorFinal"
+        android:onClick="Sortear"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResultado"
+        android:layout_below="@id/btnSortear"
+        android:layout_margin="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_centerHorizontal="true"
+        />
+</android.widget.RelativeLayout>
